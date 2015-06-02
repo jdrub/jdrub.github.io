@@ -2,242 +2,281 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="Person portfolio website" content="">
-    <meta name="Joshua Drubin" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Webpage">
+    <meta name="author" content="Joshua Drubin">
 
-    <title>Joshua Drubin|Maker</title>
+    <title>jdrub</title>
 
-    <!-- Bootstrap core CSS -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <!-- Custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
 
-    <!-- Add custom CSS here -->
-    <link href="css/landing-page.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-
-
-
+    <!-- Custom Fonts -->
     
 
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
 
-</head>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
 
-<body>
-
-    <!--======================================
-                MAIN NAV
-    ========================================-->
-
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#home">Joshua Drubin</a>
-            </div>
-
-
-            <div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <li><a href="#about">About</a>
-                    </li>
-                    <li><a href="#projects">Projects</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
-    <div id="home" class="intro-header">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message" id="fadeIn-right">
-                        <h1>Joshua Drubin</h1>
-                        <h3>Developer |  Maker</h3>
-                        <hr class="intro-divider">
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.intro-header -->
-
-    <!--==============================
-                ABOUT ME
-    ==================================-->            
-    <div id="about" class="content-section-a">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">About Me</h2>
-                    <p class="lead">I'm currently a rising Senior majoring in <b>Computer Engineering</b> at the University of Maryland, College Park. I love challenging problems and being creative. Check out some of my <a href="#projects" ><b>Projects</b></a> below.
-                    </p>
-                </div>
-
-                <div class="col-lg-3 col-lg-offset-3">
-               		<img class="img-responsive img-circle" src="img/headshot.png" alt=""> 
-		</div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- ==========================
-            PROJECTS
-    =============================== -->
-        
-
-
-    <div id="projects" class="content-section-b">
-
-        <div class="container fade-in">
-
-            <div class="row">
-                <div class="col-sm-push-6 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Crittercam</h2>
-                    <p class="lead">During my Freshman year and summer at UMD I worked on a 'smarter' prototype of the widely used Crittercam in coordination with <b>Professor Nuno Martins</b> and <b>Dr. Konrad Aschenbach</b> from National Geographic. The purpose of the Crittercam is to allow humans to study wild animals by capturing video from the device, such as the first person video shown in the popular documentary <a target="_blank"href="http://en.wikipedia.org/wiki/March_of_the_Penguins">March of the Penguins</a>. <b>My role</b> in developing the new prototype was writing much of the software that used a variety of sensors and radios to create a mesh network between all of the active devices to best decide when to activate the camera, thus saving battery life and increasing the length of time the device is able to remain in the field.</p>
-                </div>
-                <div class="col-sm-pull-6 col-sm-6">
-                    <img class="img-responsive img-circle img-scale-70" src="img/crittercam.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-a">
-        
-        <div class="container">
-
-            <div class="row">
-                
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Greencan</h2>
-                    <p class="lead">At the second University of Michigan hackathon, MHacks II, I along with two other teammates came in first place, competing against over 2000 other students. Our project, <b>Greencan</b>, was built during the 36 hour hackathon and acted as a single-stream receptical that was able to sort recycling from garbage just based on input from a microphone. Check out a <a target="_blank" href="http://www.eng.umd.edu/html/news/news_story.php?id=7670">press release</a>.
-                </div>
-
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive img-circle img-scale-80" src="img/mhacks.jpg" alt="">
-                </div>
-                
-            </div>
-
-        </div>
-    </div>
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Robotics</h2>
-                    <p class="lead">My sophomore year of high school I became fascinated with the humanoid robots that fought in the <a target="_blank" href="https://www.youtube.com/watch?v=H-1mmPpLPGw"><b>Robo-One</b></a> competitions, so I decided to make my own. Once I built it and finally wrote all the code, I made it remote-controlled, then smaller and more compact, and in the end I designed and had manufactured my own circuit board to get rid of all the wires you can see in the picture.</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive img-circle img-scale-80" src="img/robot.jpg" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <!--=================================
-                banner
-    ===================================-->
-
-    <div id="contact" class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-md-offset-5 col-sm-offset-4">
-                    <h2>Wanna talk?</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-offset-3 col-md-offset-2 col-sm-offset-0">
-                    <h2>Contact me at <b>j.drubin94@gmail.com</b></h2>
-                </div>
-                
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-inline">
-                        <li><a href="#home">Home</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#about">About</a>
-                        </li>
-                        <li class="footer-menu-divider">&sdot;</li>
-                        <li><a href="#projects">Projects</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/scroll.js"></script>
-    <script src="js/jquery.visible.min.js"></script>
-    <script>
-        $(document).ready(function() {
 
-            $("#fadeIn-right").animate({right:800, opacity:"hide"}, 0);
-            $("#fadeIn-right").animate({right:0, opacity:"show"}, 1500);
+    <script>
+    $(document).ready(function(){
+
+        $('#aboutContent').slideUp(0);
+        $('#projectsContent').slideUp(0);
+        $('#contactContent').slideUp(0);
+        $('#p1').slideUp(0);
+        $('#p2').slideUp(0);
+        $('#p3').slideUp(0);
+        $('#p4').slideUp(0);
+        $('#p5').slideUp(0);
+
+
+        $('#about').click(function(e){
+            e.preventDefault();
+            if($('#aboutContent').is(':visible') == true){
+                $('#aboutContent').slideUp(1000);
+            } else{
+                $('#aboutContent').slideDown(1000);
+                $('#projectsContent').slideUp(1000);
+                $('#contactContent').slideUp(1000);
+                $('#')
+            }
 
         });
 
+        $('#projects').click(function(e){
+            e.preventDefault();
+            if($('#projectsContent').is(':visible') == true){
+                $('#projectsContent').slideUp(1000);
+            } else{
+                $('#aboutContent').slideUp(1000);
+                $('#projectsContent').slideDown(1000);
+                $('#contactContent').slideUp(1000);
+            }
+
+        });
+
+        $('#contact').click(function(e){
+            e.preventDefault();
+            if($('#contactContent').is(':visible') == true){
+                $('#contactContent').slideUp(1000);
+            } else{
+                $('#aboutContent').slideUp(1000);
+                $('#projectsContent').slideUp(1000);
+                $('#contactContent').slideDown(1000);
+            }
+
+        });
+
+        $('#p1-heading').click(function(e){
+            if($('#p1').is(':visible') == false){
+                $('#p1').delay(500).fadeIn(500);
+                $('#p2').fadeOut(500).slideUp(0);
+                $('#p3').fadeOut(500).slideUp(0);
+                $('#p4').fadeOut(500).slideUp(0);
+                $('#p5').fadeOut(500).slideUp(0);
+            }
+        });
+
+        $('#p2-heading').click(function(e){
+            if($('#p2').is(':visible') == false){
+                $('#p2').delay(500).fadeIn(500);
+                $('#p1').fadeOut(500).slideUp(0);
+                $('#p3').fadeOut(500).slideUp(0);
+                $('#p4').fadeOut(500).slideUp(0);
+                $('#p5').fadeOut(500).slideUp(0);
+            }
+        });
+
+        $('#p3-heading').click(function(e){
+            if($('#p3').is(':visible') == false){
+                $('#p3').delay(500).fadeIn(500);
+                $('#p1').fadeOut(500).slideUp(0);
+                $('#p2').fadeOut(500).slideUp(0);
+                $('#p4').fadeOut(500).slideUp(0);
+                $('#p5').fadeOut(500).slideUp(0);
+            }
+        });
+
+        $('#p4-heading').click(function(e){
+            if($('#p4').is(':visible') == false){
+                $('#p4').delay(500).fadeIn(500);
+                $('#p1').fadeOut(500).slideUp(0);
+                $('#p2').fadeOut(500).slideUp(0);
+                $('#p3').fadeOut(500).slideUp(0);
+                $('#p5').fadeOut(500).slideUp(0);
+            }
+        });
+
+        $('#p5-heading').click(function(e){
+            if($('#p5').is(':visible') == false){
+                $('#p5').delay(500).fadeIn(500);
+                $('#p1').fadeOut(500).slideUp(0);
+                $('#p2').fadeOut(500).slideUp(0);
+                $('#p3').fadeOut(500).slideUp(0);
+                $('#p4').fadeOut(500).slideUp(0);
+            }
+        });
+
+
+    });
     </script>
 
+</head>
+
+
+
+<body>
     
+
+    <header>
+        <div class="row">
+            <div class="text-center">
+                <div class="name">
+                    <h1>Joshua Drubin</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+        <div id="container">
+
+            <div id="container">
+
+                <div id="about" class="head text-center">
+                    <h2 class="hvr-bob">About</h2>
+                </div>
+
+                
+                <div id="aboutContent" class="row">
+                    <div class="col-md-3 col-md-offset-1">
+                        <img src="img/headshot-compressed.jpg" class="img-rounded img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <h3>
+                            Currently, I'm a rising Senior Computer Engineering Student at the University of Maryland with a passion for solving hard problems and building cool things. This Summer I'm working as a Software Engineering intern at <a target="_blank" href="https://www.zocdoc.com/">ZocDoc</a> and loving it. Check out some of my projects below!
+                        </h3>
+                    </div>
+                </div>
+            </div>
+                
+            <div id="container">
+
+                <div class="text-center">
+                    
+                    <h2 id="projects" class="head hvr-bob">
+                        Projects
+                    </h2>
+
+                    <div id="projectsContent">
+
+                        <!-- Project headings -->
+                        <div class="row content text-center">
+                            <div id="p1-heading" class="col-md-2 col-md-offset-1 hvr-float">
+                                <h3 class="project-heading">Bipedal Robot</h3>
+                            </div>
+
+                            <div id="p2-heading" class="col-md-2 hvr-float">
+                                <h3 class="project-heading">Crittercam 2</h3>
+                            </div>
+                            <div id="p3-heading" class="col-md-2 hvr-float">
+                                <h3 class="project-heading">Greencan</h3>
+                            </div>
+                            <div id="p4-heading" class="col-md-2 hvr-float">
+                                <h3 class="project-heading">Treehood</h3>
+                            </div>
+                            <div id="p5-heading" class="col-md-2 hvr-float">
+                                <h3 class="project-heading">Planetary Rover</h3>
+                            </div>
+                        </div>
+                        
+                        <!-- Projects Information -->
+                        <div id="p1" class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img src="img/robot.jpg" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-left">
+                                    My sophomore year of high school I became fascinated with the humanoid robots that fought in the <a target="_blank" href="https://www.youtube.com/watch?v=H-1mmPpLPGw"><b>Robo-One</b></a> competitions, so I decided to make my own to learn more about the field of robotics. Once I built it and finally wrote all the code, I made it remote-controlled, then smaller and more compact, and in the end I designed and had manufactured my own circuit board to get rid of all the wires you can see in the picture.</p>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <div id="p2" class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img src="img/crittercam.jpg" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-left">
+                                    During my Freshman year and summer at UMD I worked on a 'smarter' prototype of the widely used Crittercam in coordination with Professor Nuno Martins and Dr. Konrad Aschenbach from National Geographic. The purpose of the Crittercam is to allow humans to study wild animals by capturing video from the device, such as the first person video shown in the popular documentary March of the Penguins. My role in developing the new prototype was writing much of the software that used a variety of sensors and radios to create a mesh network between all of the active devices to best decide when to activate the camera, thus saving battery life and increasing the length of time the device is able to remain in the field.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="p3" class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img src="img/greencan.png" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-left">
+                                    At the second University of Michigan hackathon, MHacks II, I along with two other teammates came in first place, competing against over 2000 other students. Our project, Greencan, was built during the 36 hour hackathon and acted as a single-stream receptical that was able to sort recycling from garbage just based on input from a microphone. Check out a <a target="_blank" href="http://www.eng.umd.edu/html/news/news_story.php?id=7670">press release</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="p4" class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img src="img/treehood.png" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-left">
+                                    Built for the Databay hackathon, this project was meant to help inspire friendly neighborhood competition in which individuals can take on challenges that have a positive effect on the environment, and track their progress against competing neighbors. A demonstration video can be found <a target="_blank" href="http://challengepost.com/software/treehood">here</a>.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="p5" class="row">
+                            <div class="col-md-3 col-md-offset-1">
+                                <img src="img/arm.png" class="img-circle img-responsive">
+                            </div>
+                            <div class="col-md-7">
+                                <p class="text-left">
+                                    As a part of a small team at the University of Maryland, I competed in NASA's RASC-AL Robo-Ops competition to build a tele-operated planetary rover that gathers space rocks. My role in the project was to write all of the software to control the robotic arm that acquires the targeted samples. While the arm was unfortunately scrapped due to motor failures, I still learned so much. Overall, I learned ROS (Robotic Operating System), and also taught myself the inverse kinematics needed to have a nice control of the arm and implemented what I consider to be a pretty nice system. For more pictures of the rover itself, check out the <a target="_blank" href="https://www.facebook.com/UMDRoboOps?fref=ts">facebook page</a>.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        <div id="container">
+            <div id="contact" class="text-center">
+                <h2 class="hvr-bob">Contact</h2>
+            </div>
+
+            <div id="contactContent" class="text-center">
+                <h2 style="opacity: .87"> If you'd like to get in touch feel free to send me an email at <span style="color: #2196F3">joshua@joshuadrubin.com</span></h2>
+            </div>
+        </div>
+
+    </div>
 
 </body>
 
