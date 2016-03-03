@@ -3,20 +3,20 @@ body{
 }
 
 h1 {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #009688;
 	font-size: 120px;
 	font-weight: 500;
 }
 
 h2 {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	color: #455A64;
 	cursor: pointer;
 }
 
 h3 {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
     color: #455A64;
     font-weight: 400;
     cursor: pointer;
@@ -24,7 +24,7 @@ h3 {
 }
 
 p {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
     color: #455A64;
     font-size: 20px;
     font-weight: 200;
@@ -32,7 +32,7 @@ p {
 }
 
 .project-heading{
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
     color: #455A64;
     opacity: .87;
 }
@@ -43,7 +43,7 @@ p {
 }
 
 .name{
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Roboto', sans-serif;
     color: #263238;
     font-size: 100px;
 }
