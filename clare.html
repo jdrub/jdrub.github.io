@@ -1,9 +1,9 @@
 <html>
     <head>
         <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-        crossorigin="anonymous"></script>
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <style>
@@ -27,6 +27,7 @@
                 text-align: center;
                 margin: 0;
                 opacity: 1;
+                z-index: 1;
             }
             .button {
                 width: 80px;
@@ -71,10 +72,8 @@
             <div id="first-page-content" class="main-img-container">
                 <h1 class="main-img-header">CLARE CULLINAN</h1>
                 <img class="only-first-page" id="main-img" src="https://pbs.twimg.com/profile_images/951140567764922370/ZBzbiN_l_400x400.jpg" alt=""/>
-                <button class="button only-first-page" id="button" > 
-                    <a class="no-underline" href="https://nitehawkcinema.com/williamsburg/">
-                        MORE
-                    </a>
+                <button class="button only-first-page" id="more-button" > 
+                    MORE
                 </button>
             </div>
         </div>
@@ -91,13 +90,17 @@
                 var scrollTop = $(this).scrollTop();
                 var secondPageTop = $('#second-page-container').position().top;
 
-                var opacityVal = easeInOutCubic(1 - scrollTop / secondPageTop);
-
-                // console.log('scrollTop: ', scrollTop);
-                // console.log('secondPageTop: ', secondPageTop);
-                console.log('opacityVal: ', opacityVal);
+                var opacityVal = easeInOutCubic(1 - scrollTop / secondPageTop + .3);
 
                 $('.only-first-page').css({ 'opacity' : opacityVal });
+            });
+
+            $("#more-button").click(function() {
+                $('html, body').animate({
+                    scrollTop:$('#second-page-container').offset().top
+                }, {
+                    duration: 'slow',
+                });
             });
         </script>
     </body>
