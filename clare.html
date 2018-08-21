@@ -1,5 +1,7 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+
         <script
             src="https://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -7,6 +9,9 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <style>
+            body {
+                margin: 0;
+            }
             .first-page-container {
                 display: flex;
                 justify-content: center;
@@ -17,6 +22,7 @@
             }
             .main-img-container {
                 position: relative;
+                max-width: 90%;
             }
             .main-img-header {
                 position: absolute;
@@ -28,6 +34,9 @@
                 margin: 0;
                 opacity: 1;
                 z-index: 1;
+            }
+            .main-img {
+                width: 100%;
             }
             .button {
                 width: 80px;
@@ -44,6 +53,9 @@
             .button:hover {
                 cursor: pointer;
                 border-color: #DF062F;
+            }
+            .button:focus {
+                outline: 0;
             }
             .button:hover > a {
                 color:#DF062F;
@@ -71,7 +83,7 @@
         <div class="first-page-container">
             <div id="first-page-content" class="main-img-container">
                 <h1 class="main-img-header">CLARE CULLINAN</h1>
-                <img class="only-first-page" id="main-img" src="https://pbs.twimg.com/profile_images/951140567764922370/ZBzbiN_l_400x400.jpg" alt=""/>
+                <img class="main-img only-first-page" id="main-img" src="https://pbs.twimg.com/profile_images/951140567764922370/ZBzbiN_l_400x400.jpg" alt=""/>
                 <button class="button only-first-page" id="more-button" > 
                     MORE
                 </button>
