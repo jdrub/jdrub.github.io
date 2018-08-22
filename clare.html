@@ -68,6 +68,7 @@
             }
             .second-page-container {
                 height: 100%;
+                width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -76,6 +77,9 @@
                 width: 300px;
                 text-align: center;
                 font-family: 'Open Sans', sans-serif;
+            }
+            .third-page-container {
+                height: 100%;
             }
         </style>
     </head>
@@ -95,16 +99,51 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             </div>
         </div>
+        <div id="third-page-container" class="third-page-container">
+
+        </div>
         <script>
             function easeInOutCubic(t) { return t<.5 ? 4*t*t*t : (t-1)*(2*t-2)*(2*t-2)+1 };
+            function getPage(scrollTop) {
+                return Math.ceil(scrollTop / window.innerHeight);
+            }
+
+            function page1(scrollTop) {
+
+            }
+
+            function page2(scrollTop) {
+                var secondPageTop = $('#second-page-container').position().top;
+                var firstPageContentOpacity = easeInOutCubic(1 - scrollTop / secondPageTop + .3);
+
+                $('.only-first-page').css({ 'opacity' : firstPageContentOpacity });
+                $('#second-page-container').css({ position: 'initial' });
+                $('#page-3-spacer').remove();
+            }
+
+            function page3(scrollTop) {
+                var thirdPageContainer = $('#third-page-container');
+                var thirdPageTop = thirdPageContainer.position().top;
+
+                var thirdPageSpacerExists = $('#page-3-spacer').length;
+                if (!thirdPageSpacerExists) {
+                    var pageSpacer = $('<div id="page-3-spacer" class="page-spacer"></div>');
+                    thirdPageContainer.after(pageSpacer);
+                }
+
+                var secondPageLeft = (scrollTop - thirdPageTop) * (window.innerHeight / window.innerWidth);
+                $('#second-page-container').css({
+                    position: 'fixed',
+                    left: secondPageLeft,
+                    top: '0',
+                });
+            }
 
             $(window).on('scroll', function() {
                 var scrollTop = $(this).scrollTop();
-                var secondPageTop = $('#second-page-container').position().top;
 
-                var opacityVal = easeInOutCubic(1 - scrollTop / secondPageTop + .3);
-
-                $('.only-first-page').css({ 'opacity' : opacityVal });
+                var pageFuncs = [page1, page2, page3];
+                pageFuncs[getPage(scrollTop)](scrollTop);
             });
 
             $("#more-button").click(function() {
