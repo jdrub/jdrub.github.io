@@ -1,4 +1,4 @@
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, user-scalable=no" />
 
@@ -131,7 +131,7 @@
                     thirdPageContainer.after(pageSpacer);
                 }
 
-                var secondPageLeft = (scrollTop - thirdPageTop) * (window.innerHeight / window.innerWidth);
+                var secondPageLeft = (scrollTop - thirdPageTop) * (window.innerWidth / window.innerHeight);
                 $('#second-page-container').css({
                     position: 'fixed',
                     left: secondPageLeft,
