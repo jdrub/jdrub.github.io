@@ -1,300 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Joshua Drubin -- About">
-    <meta name="author" content="Joshua Drubin">
-
-    <title>Joshua Drubin</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
- <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <script>
-    $(document).ready(function(){
-
-        $('#aboutContent').slideUp(0);
-        $('#projectsContent').slideUp(0);
-        $('#contactContent').slideUp(0);
-        $('#p1').slideUp(0);
-        $('#p2').slideUp(0);
-        $('#p3').slideUp(0);
-        $('#p4').slideUp(0);
-        $('#p5').slideUp(0);
-
-
-        $('#about').click(function(e){
-            e.preventDefault();
-            if($('#aboutContent').is(':visible') == true){
-                $('#aboutContent').slideUp(1000);
-            } else{
-                $('#aboutContent').slideDown(1000);
-                $('#projectsContent').slideUp(1000);
-                $('#contactContent').slideUp(1000);
-                $('#')
-            }
-
-        });
-
-        $('#projects').click(function(e){
-            e.preventDefault();
-            if($('#projectsContent').is(':visible') == true){
-                $('#projectsContent').slideUp(1000);
-            } else{
-                $('#aboutContent').slideUp(1000);
-                $('#projectsContent').slideDown(1000);
-                $('#contactContent').slideUp(1000);
-            }
-
-        });
-
-        $('#contact').click(function(e){
-            e.preventDefault();
-            if($('#contactContent').is(':visible') == true){
-                $('#contactContent').slideUp(1000);
-            } else{
-                $('#aboutContent').slideUp(1000);
-                $('#projectsContent').slideUp(1000);
-                $('#contactContent').slideDown(1000);
-            }
-
-        });
-
-        $('#p1-heading').click(function(e){
-            if($('#p1').is(':visible') == false){
-                $('#p1').delay(500).fadeIn(500);
-                $('#p2').fadeOut(500).slideUp(0);
-                $('#p3').fadeOut(500).slideUp(0);
-                $('#p4').fadeOut(500).slideUp(0);
-                $('#p5').fadeOut(500).slideUp(0);
-            }
-        });
-
-        $('#p2-heading').click(function(e){
-            if($('#p2').is(':visible') == false){
-                $('#p2').delay(500).fadeIn(500);
-                $('#p1').fadeOut(500).slideUp(0);
-                $('#p3').fadeOut(500).slideUp(0);
-                $('#p4').fadeOut(500).slideUp(0);
-                $('#p5').fadeOut(500).slideUp(0);
-            }
-        });
-
-        $('#p3-heading').click(function(e){
-            if($('#p3').is(':visible') == false){
-                $('#p3').delay(500).fadeIn(500);
-                $('#p1').fadeOut(500).slideUp(0);
-                $('#p2').fadeOut(500).slideUp(0);
-                $('#p4').fadeOut(500).slideUp(0);
-                $('#p5').fadeOut(500).slideUp(0);
-            }
-        });
-
-        $('#p4-heading').click(function(e){
-            if($('#p4').is(':visible') == false){
-                $('#p4').delay(500).fadeIn(500);
-                $('#p1').fadeOut(500).slideUp(0);
-                $('#p2').fadeOut(500).slideUp(0);
-                $('#p3').fadeOut(500).slideUp(0);
-                $('#p5').fadeOut(500).slideUp(0);
-            }
-        });
-
-        $('#p5-heading').click(function(e){
-            if($('#p5').is(':visible') == false){
-                $('#p5').delay(500).fadeIn(500);
-                $('#p1').fadeOut(500).slideUp(0);
-                $('#p2').fadeOut(500).slideUp(0);
-                $('#p3').fadeOut(500).slideUp(0);
-                $('#p4').fadeOut(500).slideUp(0);
-            }
-        });
-
-
-    });
-    </script>
-
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-64768067-1', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
-</head>
-
-
-
-<body>
-
-
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    
+    <title>Drubin</title>
+    <meta name="description" content="Site description">
+    
+    <!-- Recommended minimum -->
+    <meta property="og:title" content="Site title">
+    <meta property="og:description" content="Site description">
+    <meta property="og:image" content="img/site-image.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- You could also inline the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body>
+    
     <header>
-        <div class="row">
-            <div class="text-center">
-                <div class="name">
-                    <h1>Joshua Drubin</h1>
-                </div>
-            </div>
-        </div>
+      <h1>
+        <a href="#home">drbn</a>
+      </h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#photos">Photos</a>
+        <a href="#portfolio">Portfolio</a>
+      </nav>
     </header>
+    
+    <main>
+      
+      <section id="home"> <!-- HOME -->
+        
+        <p>This is the homepage, displayed by default.</p>
+        
+      </section>
+      
+      <section id="about"> <!-- ABOUT -->
+        
+        <p>This is the about page. <a href="#another-page">This is a link to another page</a>.</p>
+        
+        <figure> 
+          <a href="#img-about">         
+            <img loading="lazy" alt="" src="https://dummyimage.com/1200x600/ddd/bbb" width="1200" height="600">
+          </a>
+          <figcaption>Example of an image with a link to a larger version.</figcaption>
+        </figure>
+        
+      </section>
+      
+      <section id="news"> <!-- NEWS -->
+        
+        <article>
+          <h2>Blogging with Joe Bloggs <time datetime="2020-10-10">10.10.2020</time></h2>
+          <p> One <em>could</em> use this setup to write <s>a blog</s> short updates. For images make sure to use the <code>loading="lazy"</code> attribute, so they get loaded only when needed.<label for="lazy">1</label><input type="checkbox" id="lazy"><small>
+            
+            You might be able to use it for <code>iframe</code> embeds too(?), but maybe just write a link to the Youtube video instead.
+            
+           </small></p>
+        </article>
+              
+        <article>
+          <h2><a href="https://example.com">Why Your Cat Bites You</a> <time datetime="2004-12-12">12.12.2004</time></h2>
+          <p>Honestly you don't want to know.</p>
+        </article>
+      
+      </section>
+      
+      <section id="photos"> <!-- PHOTOS -->
+        
+        <p>An example of a photo gallery with a lightbox.</p>
 
+        <!-- You can use this grid of images in any page -->
+        
+        <div class="grid">
+          <a href="#img-01"><img loading="lazy" alt="" src="https://dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-02"><img loading="lazy" alt="" src="https://dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-03"><img loading="lazy" alt="" src="https://dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-04"><img loading="lazy" alt="" src="https://dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-05"><img loading="lazy" alt="" src="https://dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-06"><img loading="lazy" alt="" src="https://dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-07"><img loading="lazy" alt="" src="https://dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-08"><img loading="lazy" alt="" src="https://dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-09"><img loading="lazy" alt="" src="https://dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-10"><img loading="lazy" alt="" src="https://dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-11"><img loading="lazy" alt="" src="https://dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-12"><img loading="lazy" alt="" src="https://dummyimage.com/300x400/ddd/bbb"></a>
+          <a href="#img-13"><img loading="lazy" alt="" src="https://dummyimage.com/300x300/ddd/bbb"></a>
+          <a href="#img-14"><img loading="lazy" alt="" src="https://dummyimage.com/400x300/ddd/bbb"></a>
+          <a href="#img-15"><img loading="lazy" alt="" src="https://dummyimage.com/300x400/ddd/bbb"></a>
+        </div>
+        
+      </section>
+      
+      <section id="portfolio"> <!-- PORTFOLIO -->
 
-        <div id="container">
-
-            <div id="container">
-
-                <div id="about" class="head text-center">
-                    <h2 class="hvr-bob">About</h2>
-                </div>
-
-
-                <div id="aboutContent" class="row">
-                    <div class="col-md-3 col-md-offset-1">
-                        <img src="img/headshot-compressed.jpg" class="img-rounded img-responsive">
-                    </div>
-                    <div class="col-md-7">
-                        <h3 style="cursor: text">
-                            I'm a recently graduated Computer Engineering
-                            student from the University of Maryland with strong interests
-                            in robotics, software development and computer architecture.
-                            I'm currently working as a software engineer at
-                            <a target="_blank" href="http://www.zocdoc.com">ZocDoc</a> in NYC and loving it.
-                            If you're interested, check out my
-                            <a target="_blank" href="joshua_drubin_resume.pdf">resume</a>.
-                            Otherwise, feel free to take a look at some of my projects below.
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div id="container">
-
-                <div class="text-center">
-
-                    <h2 id="projects" class="head hvr-bob">
-                        Projects
-                    </h2>
-
-                    <div id="projectsContent">
-
-                        <!-- Project headings -->
-                        <div class="row content text-center">
-                            <div id="p1-heading" class="col-md-2 col-md-offset-1 hvr-float">
-                                <h3 class="project-heading">Bipedal Robot</h3>
-                            </div>
-
-                            <div id="p2-heading" class="col-md-2 hvr-float">
-                                <h3 class="project-heading">Crittercam</h3>
-                            </div>
-                            <div id="p3-heading" class="col-md-2 hvr-float">
-                                <h3 class="project-heading">GreenCan</h3>
-                            </div>
-                            <div id="p4-heading" class="col-md-2 hvr-float">
-                                <h3 class="project-heading">Treehood</h3>
-                            </div>
-                            <div id="p5-heading" class="col-md-2 hvr-float">
-                                <h3 class="project-heading">Planetary Rover</h3>
-                            </div>
-                        </div>
-
-                        <!-- Projects Information -->
-                        <div id="p1" class="row">
-                            <div class="col-md-3 col-md-offset-1">
-                                <img src="img/robot.jpg" class="img-circle img-responsive">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="text-left">
-                                    When I was a sophomore in high school I became fascinated with the humanoid robots that fought in the <a target="_blank" href="https://www.youtube.com/watch?v=H-1mmPpLPGw"><b>Robo-One</b></a> competitions, so I decided to make my own to learn more about the field of robotics. Once I built it and finally wrote all the code, I made it remote-controlled, then smaller and more compact, and in the end I designed and had manufactured my own circuit board to get rid of all the wires you can see in the picture.</p>
-
-                                </p>
-                            </div>
-                        </div>
-
-                        <div id="p2" class="row">
-                            <div class="col-md-3 col-md-offset-1">
-                                <img src="img/crittercam.jpg" class="img-circle img-responsive">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="text-left">
-                                    From fall of my freshman year through the fall of my sophomore year at UMD, I worked on creating a 'smarter' prototype of National Geographic's Crittercam under Professor Nuno Martins of UMD and Dr. Konrad Aschenbach from National Geographic. The purpose of the Crittercam is to allow humans to study wild animals by capturing video from the device, such as the first person video shown in the popular documentary March of the Penguins. My role in developing the new prototype was writing much of the software that used a variety of sensors and radios to create a mesh network between all of the active devices to best decide when to activate the camera, thus saving battery life and increasing the length of time the device is able to remain in the field.
-                                </p>
-                            </div>
-                        </div>
-                        <div id="p3" class="row">
-                            <div class="col-md-3 col-md-offset-1">
-                                <img src="img/greencan.png" class="img-circle img-responsive">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="text-left">
-                                    At the second University of Michigan hackathon, MHacks II, my two teammates and I came in first place, competing against over 1,000 other students. Our project, GreenCan, was built during the 36-hour hackathon and acted as a single-stream receptacle that was able to sort recycling from garbage just based on input from a microphone. Check out a <a target="_blank" href="http://www.eng.umd.edu/html/news/news_story.php?id=7670">press release</a>.
-                                </p>
-                            </div>
-                        </div>
-                        <div id="p4" class="row">
-                            <div class="col-md-3 col-md-offset-1">
-                                <img src="img/treehood.png" class="img-circle img-responsive">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="text-left">
-                                    Built for the Databay hackathon, this project was meant to inspire friendly neighborhood competition in which individuals can take on challenges that have a positive effect on the environment, and track their progress against competing neighbors. A demonstration video can be found <a target="_blank" href="http://challengepost.com/software/treehood">here</a>.
-                                </p>
-                            </div>
-                        </div>
-                        <div id="p5" class="row">
-                            <div class="col-md-3 col-md-offset-1">
-                                <img src="img/arm.png" class="img-circle img-responsive">
-                            </div>
-                            <div class="col-md-7">
-                                <p class="text-left">
-                                    As part of a small team at the University of Maryland, I competed in NASA's RASC-AL Robo-Ops competition to build a tele-operated planetary rover that gathers space rocks. My role in the project was to write all of the software to control the robotic arm that acquires the targeted samples. While the arm was unfortunately scrapped due to motor failures, I learned a lot about ROS (Robotic Operating System), and also taught myself the inverse kinematics needed to have a nice control of the arm and implemented what I consider to be a pretty nice system. For more pictures of the rover itself, check out the <a target="_blank" href="https://www.facebook.com/UMDRoboOps?fref=ts">facebook page</a>.
-                                </p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-
-        <div id="container">
-            <div id="contact" class="text-center">
-                <h2 class="hvr-bob">Contact</h2>
-            </div>
-
-            <div id="contactContent" class="text-center">
-                <h2 style="opacity: .87; cursor: text"> If you'd like to get in touch, feel free to send me an email at <span style="color: #2196F3">joshua@joshuadrubin.com</span></h2>
-            </div>
+        <div class="slides">
+          <figure><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></figure>
+          <figure><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></figure>
+          <figure><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></figure>
+          <figure>
+            <p>You could also have text over here…</p>
+          </figure>
+          <figure>
+            <img loading="lazy" alt="" src="https://dummyimage.com/1000x1000/ddd/bbb">
+            <figcaption>…or image captions</figcaption>
+          </figure>
+          <figure style="background:#fdcb39">
+            <img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb">
+            <figcaption>add a solid background</figcaption>
+          </figure>
+          <figure class="cover">
+            <img loading="lazy" alt="" src="https://64.media.tumblr.com/7904066936b9324571738bbbeeb082e9/tumblr_myopxy8uJI1qz4vi0o1_1280.jpg">
+            <p style="color:#fff">or go full bleed</p>
+          </figure>
         </div>
 
-    </div>
+      </section>
+        
+      <section id="another-page"> <!-- ANOTHER PAGE -->
+        
+        <p>This page is not referenced in the menu, yet it exists.</p>
+        <p><a href="#about">← back</a></p>
+        
+      </section>
+      
+    </main>
+    
+    <!-- ----------
+    LIGHTBOX IMAGES
+    ----------- -->
 
-</body>
-
+    <!-- PHOTOS grid -->
+    
+    <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="https://dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-04"><img loading="lazy" alt="" src="https://dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-05"><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-06"><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-07"><img loading="lazy" alt="" src="https://dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-08"><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-09"><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-10"><img loading="lazy" alt="" src="https://dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-11"><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="https://dummyimage.com/3000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="https://dummyimage.com/4000x3000/ddd/bbb"></a>
+    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="https://dummyimage.com/3000x4000/ddd/bbb"></a>    
+    
+    <!-- Other images -->
+    
+    <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt="" src="https://dummyimage.com/2400x1200/ddd/bbb"></a>
+    
+  </body>
 </html>
