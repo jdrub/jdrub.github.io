@@ -3,7 +3,7 @@
     /* Color scheme */
     
     --textcolor: #121212;
-    --bgcolor: #fffce4;
+    --bgcolor: #fffef8;
     --highlight: #2749c9;
   
   }
@@ -307,7 +307,7 @@
   
   .grid {
     display: grid;
-    grid-gap: 5vmin;
+    grid-gap: 9vmin;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* 150px = minimum image size */
     grid-auto-flow: dense;
     padding: 2em 0;
@@ -338,6 +338,7 @@
   }
 
   .grid.large {
+    grid-gap: 5vmin;
     grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* 215px = minimum image size */
   }
 
