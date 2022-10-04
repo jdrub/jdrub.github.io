@@ -336,6 +336,14 @@
     height: 100%;
     object-fit: contain;
   }
+
+  .grid.large {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); /* 215px = minimum image size */
+  }
+
+  .grid.large img {
+    margin: 0 auto;
+  }
   
   /* ------- Slideshow ------- */
   
