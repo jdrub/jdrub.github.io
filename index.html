@@ -3,38 +3,38 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    
+
     <title>drbn</title>
     <meta name="description" content="a site to post game updates, photos, drawings, and anything else I feel like posting">
-    
+
     <!-- Recommended minimum -->
     <meta property="og:title" content="drbn">
     <meta property="og:description" content="a site to post game updates, photos, drawings, and anything else I feel like posting">
     <meta property="og:image" content="img/site-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    
+
     <!-- You could also inline the stylesheet -->
     <link rel="stylesheet" href="style.css">
-    
+
   </head>
   <body>
-    
+
     <header>
       <h1>
         <a href="#home">drbn</a>
       </h1>
       <nav>
         <!-- <a href="#about">About</a> -->
-        <a href="#game-updates">Game Updates</a>
+        <a href="#game-updates">Scythe Machine</a>
         <a href="#photos">Photos</a>
         <a href="#projects">Projects</a>
       </nav>
     </header>
-    
+
     <main>
-      
+
       <section id="home"> <!-- HOME -->
-        
+
         <p>Welcome to my site</p>
         <p>
             I'm spending most of my time working on making a video game and plan to post updates and gifs here along with other photos and drawings.
@@ -48,15 +48,51 @@
         <p style="font-size: 15px;">If you'd like to get in touch, shoot an email to <a href="mailto:joshua@drubin.io">joshua@drubin.io</a></p>
 
       </section>
-      
+
       <!-- <section id="about">
-        
+
         <p>todo</p>
-        
+
       </section> -->
-      
+
       <section id="game-updates"> <!-- GAME UPDATES -->
 
+        <article>
+          <h2>Back to the Devlog with a Character Rework <time datetime="2023-11-03">2023.11.03</time></h2>
+          <p>
+            Well it has been just over a year since I stopped making actual
+            posts. I fell off after just three entries, a new record. Well now I'm
+            back. I was finding it much easier to just post stories on
+            Instagram, but it feels too ephemeral now. I'd like to just have it
+            all in one place. I have been regularly working on Scythe Machine,
+            but since I don't have it in me to fill in a year's worth of
+            updates, I'll just mention the most recent one.
+          </p>
+            <video autoplay loop muted playsinline src="./img/devlog/tree-runner-rework-video.mp4"></video>
+            &nbsp;
+          <p>
+            I just reworked the green fellas because they were the first enemy I
+            made over 2 years ago and the animations / control-scheme was out of
+            date. Below is part of the new sprite sheet that I generated after
+            exporting the 3d animations from Blender as a sequence of images
+            which then get put together in Aseprite to make the actual sheet.
+          </p>
+          <video autoplay loop muted playsinline src="./img/devlog/tree-runner-3d-video.mp4"></video>
+          &nbsp;
+          <img loading="lazy" alt="" src="./img/devlog/spritesheet.jpg">
+          &nbsp;
+          <p>
+            Then I pull that sprite sheet into Unity where it gets sliced up
+            with every frame receiving a label of some sort. Afterwards, I
+            personally use code to control the characters’ animations every
+            frame because the built-in animation tooling in Unity is kinda wack.
+          </p>
+          <p>
+            The first gif at the beginning of this post shows the green fellas
+            and their new animations / movement stuff. Excuse my poor aim in the
+            clip,, I’m working on it 😵‍💫
+          </p>
+        </article>
         <article>
           <h2>Import New Artwork in B&W <time datetime="2022-10-23">2022.10.23</time></h2>
           <p>
@@ -120,9 +156,9 @@
         </article>
 
       </section>
-      
+
       <section id="photos"> <!-- PHOTOS -->
-        
+
         <p>
           here are some of my photos
           <label for="photo-footnote">1</label>
@@ -134,7 +170,7 @@
         </p>
 
         <!-- You can use this grid of images in any page -->
-        
+
         <div class="grid">
           <a href="#img-01"><img loading="lazy" alt="" src="./img/thumbnails/bk-night-jogger.jpg"></a>
           <a href="#img-02"><img loading="lazy" alt="" src="./img/thumbnails/redrock-brian-climb.jpg"></a>
@@ -152,9 +188,9 @@
           <a href="#img-14"><img loading="lazy" alt="" src="./img/thumbnails/moab-nathan-spelunk-2.jpg"></a>
           <a href="#img-15"><img loading="lazy" alt="" src="./img/thumbnails/boulder-shelby.jpg"></a>
         </div>
-        
+
       </section>
-      
+
       <section id="projects"> <!-- PORTFOLIO -->
 
         <p>todo</p>
@@ -180,22 +216,22 @@
         </div> -->
 
       </section>
-        
+
       <section id="another-page"> <!-- ANOTHER PAGE -->
-        
+
         <p>This page is not referenced in the menu, yet it exists.</p>
         <p><a href="#about">← back</a></p>
-        
+
       </section>
-      
+
     </main>
-    
+
     <!-- ----------
     LIGHTBOX IMAGES
     ----------- -->
 
     <!-- PHOTOS grid -->
-    
+
     <a href="#photos" class="lightbox" id="img-01"><img loading="lazy" alt="" src="./img/fullres/bk-night-jogger.jpg"></a>
     <a href="#photos" class="lightbox" id="img-02"><img loading="lazy" alt="" src="./img/fullres/redrock-brian-climb.jpg"></a>
     <a href="#photos" class="lightbox" id="img-03"><img loading="lazy" alt="" src="./img/fullres/bk-studio-laslo.jpg"></a>
@@ -210,11 +246,11 @@
     <a href="#photos" class="lightbox" id="img-12"><img loading="lazy" alt="" src="./img/fullres/squam-moonrock.jpg"></a>
     <a href="#photos" class="lightbox" id="img-13"><img loading="lazy" alt="" src="./img/fullres/boulder-town.jpg"></a>
     <a href="#photos" class="lightbox" id="img-14"><img loading="lazy" alt="" src="./img/fullres/moab-nathan-spelunk-2.jpg"></a>
-    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="./img/fullres/boulder-shelby.jpg"></a>    
-    
+    <a href="#photos" class="lightbox" id="img-15"><img loading="lazy" alt="" src="./img/fullres/boulder-shelby.jpg"></a>
+
     <!-- Other images -->
-    
+
     <a href="#about" class="lightbox" id="img-about"><img loading="lazy" alt="" src="https://dummyimage.com/2400x1200/ddd/bbb"></a>
-    
+
   </body>
 </html>
